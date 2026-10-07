@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Backend
+.env
+backend/.env
+backend/floora.db
+backend/*.db
+backend/*.sqlite3
+floora.db
+api-tests.log
+api-tests.status
+backend/api-upload-test.log
+backend/api-upload-test.status
+backend/backend-tests.log
+backend/backend-tests.status
+backend/.coverage
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.log
+
+# Environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# GitHub Actions
+.github/secrets/

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #2b211b;
+  background: #fffaf3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select { font: inherit; }
+::selection { background: #f5c8a8; color: #412a1e; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #dfcbb9; border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+@layer components {
+  .panel { @apply rounded-3xl border border-[#eadfd3] bg-white shadow-soft; }
+  .field { @apply w-full rounded-xl border border-[#e8ddd2] bg-white px-3.5 py-2.5 text-sm text-ink outline-none transition focus:border-cinnamon focus:ring-4 focus:ring-cinnamon/10; }
+  .primary-button { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-cinnamon px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-cinnamon/20 transition hover:-translate-y-0.5 hover:bg-caramel disabled:cursor-not-allowed disabled:opacity-50; }
+  .secondary-button { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-[#e5d8cb] bg-white px-4 py-2.5 text-sm font-semibold text-ink transition hover:border-cinnamon hover:text-cinnamon; }
+}
