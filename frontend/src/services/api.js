@@ -1,7 +1,8 @@
 import axios from "axios";
 
+const defaultApiUrl = "https://floora-bakes-1.onrender.com/api";
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "/api",
+  baseURL: import.meta.env.VITE_API_URL || defaultApiUrl,
   timeout: 30000,
 });
 
